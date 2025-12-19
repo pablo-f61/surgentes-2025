@@ -1,0 +1,80 @@
+
+
+
+body {
+  margin: 0;
+  font-family: "Special Elite", monospace;
+  background-image: url("../img/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+main {
+  min-height: 100vh;
+  padding: 60px;
+}
+
+nav {
+  margin-top: 40px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 48px;
+  letter-spacing: 0.04em;
+  margin-bottom: 20px;
+}
+
+p {
+  max-width: 700px;
+  font-size: 25px;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+}
+
+.menu a {
+  font-family: "Special Elite", monospace;
+  color: white;
+  text-decoration: none;
+  padding: 8px 14px;
+  font-size: 16px;
+  display: inline-block;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.menu a:hover {
+  opacity: 0.3;
+  transform: translateX(1px);
+}
+
+.video {
+  margin: 40px 10px;
+}
+
+.video iframe {
+  max-width: 100%;
+  border: none;
+}
+
+
+@media (max-width: 768px) {
+  main {
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
