@@ -4,16 +4,28 @@
 body {
   margin: 0;
   font-family: "Special Elite", monospace;
-  background-image: url("../img/fondo.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   color: white;
 }
 
+
+
+
 main {
-  min-height: 100vh;
-  padding: 60px;
+  position: relative;
+  z-index: 1;
+  padding: 60px 80px;   /* 👈 más aire lateral */
+  max-width: 1500px;     /* 👈 evita que se pegue a los bordes */
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("../img/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4; /* 👈 AJUSTÁ ACÁ */
+  z-index: -1;
 }
 
 nav {
@@ -21,28 +33,30 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: rgb(26, 22, 22);
   text-decoration: none;
   margin-right: 20px;
   font-weight: bold;
 }
 
 h1 {
+  color:  rgb(13, 13, 13);
   font-size: 60px;
   letter-spacing: 0.04em;
   margin-bottom: 20px;
 }
 
 p {
-  max-width: 1000px;
+  max-width:1000px;
   font-size: 30px;
+  color:  rgb(13, 13, 13);
   letter-spacing: 0.03em;
   line-height: 1.6;
 }
 
 .menu a {
   font-family: "Special Elite", monospace;
-  color: white;
+  color: rgb(13, 13, 13);
   text-decoration: none;
   padding: 8px 14px;
   font-size: 40px;
@@ -56,7 +70,7 @@ p {
 }
 
 .video {
-  margin: 40px 100px;
+  margin: 60px 100px;
 }
 
 .video iframe {
