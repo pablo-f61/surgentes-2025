@@ -46,18 +46,13 @@ p {
   transform: translateX(2px);
 }
 
-.volver {
-  margin-top: 60px;
+.menu {
+  display: flex;
+  gap: 20px;
 }
 
-.volver a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-size: 30px;
-  opacity: 0.6;
-}
 
-.volver a:hover {
+.menu a:hover {
   opacity: 1;
 }
 
@@ -78,7 +73,7 @@ nav a {
   text-decoration: none;
   padding: 8px 14px;
   font-size: 40px;
-  display: inline-block;
+  opacity: 0.6;
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
@@ -87,7 +82,14 @@ nav a {
   transform: translateX(1px);
 }
 
+
 @media (max-width: 768px) {
+
+    .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
   main {
     padding: 30px;
   }
@@ -99,8 +101,7 @@ nav a {
   p {
     font-size: 18px;
   }
-
-    .volver {
+  .menu {
     flex-direction: column;
     align-items: center;
     gap: 16px;
