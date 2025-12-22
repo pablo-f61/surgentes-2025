@@ -110,4 +110,9 @@ nav a {
     align-items: center;
     gap: 16px;
   }
+
+    .menu a {
+    font-size: 28px;
+  }
+
 }
