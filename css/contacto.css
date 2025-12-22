@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: "Special Elite", monospace;
+  background-image: url("../img/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: rgb(0, 0, 0);
+}
+
+.contenedor {
+  min-height: 100vh;
+  padding: 80px 60px;
+  background-color: rgba(255,255,255,0.65);
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+
+p {
+  max-width: 700px;
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.links {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.links a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  opacity: 0.8;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.links a:hover {
+  opacity: 1;
+  transform: translateX(2px);
+}
+
+.volver {
+  margin-top: 60px;
+}
+
+.volver a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  opacity: 0.6;
+}
+
+.volver a:hover {
+  opacity: 1;
+}
+
+nav {
+  margin-top: 40px;
+}
+
+nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.menu a {
+  font-family: "Special Elite", monospace;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 8px 14px;
+  font-size: 40px;
+  display: inline-block;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.menu a:hover {
+  opacity: 0.3;
+  transform: translateX(1px);
+}
