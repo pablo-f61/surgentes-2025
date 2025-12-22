@@ -1,0 +1,85 @@
+
+body {
+  margin: 0;
+  font-family: "Special Elite", monospace;
+  color: rgb(2, 0, 10);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("../img/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2; /* 👈 AJUSTÁ ACÁ */
+  z-index: -1;
+}
+
+.integrantes {
+  max-width: 900px;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.integrante h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.integrante p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+nav {
+  margin-top: 40px;
+}
+
+nav a {
+  color: rgb(26, 22, 22);
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;   /* uno abajo del otro */
+  align-items: center;      /* 👈 ESTO los centra */
+  gap: 12px;
+}
+
+.menu a {
+  font-family: "Special Elite", monospace;
+  color: rgb(13, 13, 13);
+  text-decoration: none;
+  padding: 8px 14px;
+  font-size: 40px;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.menu a:hover {
+  opacity: 0.3;
+  transform: translateX(1px);
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
