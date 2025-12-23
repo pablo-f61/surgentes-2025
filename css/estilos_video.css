@@ -90,7 +90,8 @@ p {
   }
 
     .video-wrapper iframe {
-    margin: 30px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 100%;
     height: auto;
   }
