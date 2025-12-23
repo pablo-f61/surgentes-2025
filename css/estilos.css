@@ -9,7 +9,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 main {
@@ -57,7 +57,7 @@ p {
 
 .menu a {
   font-family: "Special Elite", monospace;
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   padding: 8px 14px;
   font-size: 40px;
