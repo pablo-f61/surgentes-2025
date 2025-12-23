@@ -85,6 +85,10 @@ p {
 
 @media (max-width: 768px) {
 
+   main {
+    padding: 40px 20px;
+  }
+
     .video-wrapper {
     margin: 30px 0;
   }
