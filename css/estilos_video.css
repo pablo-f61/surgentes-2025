@@ -86,11 +86,13 @@ p {
 @media (max-width: 768px) {
 
    main {
-    padding: 40px 20px;
+    margin: 20px 0;
   }
 
-    .video-wrapper {
+    .video-wrapper iframe {
     margin: 30px 0;
+    width: 100%;
+    height: auto;
   }
   
   main {
