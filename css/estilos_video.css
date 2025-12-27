@@ -92,24 +92,28 @@ p {
 
 @media (max-width: 768px) {
 
-   main {
-    margin: 20px 0;
+    main {
+    padding: 20px;
   }
 
-    .video-wrapper iframe {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 100%;
-    height: auto;
+    .video-wrapper {
+    margin: 30px auto;
   }
- 
 
   h1 {
     font-size: 32px;
   }
 
+    h2 {
+    font-size: 24px;
+  }
+
   p {
     font-size: 18px;
+  }
+
+    .video-wrapper {
+    margin: 30px auto;
   }
 
     .menu {
