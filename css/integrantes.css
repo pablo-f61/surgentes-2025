@@ -33,6 +33,11 @@ body::before {
   margin-bottom: 8px;
 }
 
+.destacado {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
 .integrante p {
   font-size: 16px;
   line-height: 1.5;
