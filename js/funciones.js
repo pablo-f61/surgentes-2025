@@ -42,4 +42,9 @@ setTimeout(() => {
 }, 27000);
 
 
+setTimeout(() => {
+  audio.pause();
+  audio.currentTime = 0;
+}, 25500);
+
 escribirTitulo();
