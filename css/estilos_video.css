@@ -46,6 +46,13 @@ h1 {
   margin-bottom: 20px;
 }
 
+h2 {
+  color:  rgb(13, 13, 13);
+  font-size: 40px;
+  letter-spacing: 0.04em;
+  margin-bottom: 20px;
+}
+
 p {
   max-width:1000px;
   font-size: 30px;
