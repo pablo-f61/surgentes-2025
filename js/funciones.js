@@ -39,7 +39,7 @@ function escribirTexto() {
 
 setTimeout(() => {
   document.querySelector(".menu").style.opacity = 1;
-}, 27000);
+}, 25500);
 
 
 setTimeout(() => {
