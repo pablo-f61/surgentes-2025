@@ -9,6 +9,16 @@ let j = 0;
 const titulo = document.getElementById("titulo");
 const texto = document.getElementById("texto");
 
+const audio = document.getElementById("maquina");
+let activado = false;
+
+window.addEventListener("click", () => {
+  if (!activado) {
+    audio.play();
+    activado = true;
+  }
+});
+
 function escribirTitulo() {
   if (i < tituloTexto.length) {
     titulo.textContent += tituloTexto[i];
