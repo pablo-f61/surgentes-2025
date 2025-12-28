@@ -12,6 +12,35 @@ body {
   color: rgb(0, 0, 0);
 }
 
+
+#portal {
+  position: fixed;
+  inset: 0;
+  background-image: url("../img/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 9999;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portal-texto {
+  font-family: "Special Elite", monospace;
+  color: rgba(10, 0, 0, 0.85);
+  font-size: 50px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+main {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease;
+}
+
 main {
   position: relative;
   background-color: rgba(180, 203, 210, 0.55);
