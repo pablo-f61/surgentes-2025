@@ -101,6 +101,14 @@ p {
 
 
 @media (max-width: 768px) {
+
+    .portal-texto {
+    font-size: 22px;
+    line-height: 1.4;
+    padding: 0 20px; /* 👈 aire lateral para que no “aplasten” los bordes */
+    text-align: center;
+  }
+
   main {
     padding: 30px;
   }
