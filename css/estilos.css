@@ -29,8 +29,8 @@ body {
 
 .portal-texto {
   font-family: "Special Elite", monospace;
-  color: rgba(10, 0, 0, 0.85);
-  font-size: 50px;
+  color: rgba(0, 0, 0,);
+  font-size: 32px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
