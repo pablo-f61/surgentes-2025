@@ -84,3 +84,16 @@ p {
    transition: transform 0.3s;
 }
 
+.boton1 {
+  position: relative;
+  width: 100%;
+  max-width: 900px;   /* en desktop queda elegante */
+  margin: 60px auto;
+  aspect-ratio: 16 / 9;
+}
+
+.boton1 {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
