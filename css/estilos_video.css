@@ -90,6 +90,15 @@ p {
   border: none;
 }
 
+.glitch-link {
+  opacity: 0.6;
+  font-size: 16px;
+  letter-spacing: 0.3em;
+}
+.glitch-link:hover {
+  opacity: 2;
+}
+
 @media (max-width: 768px) {
 
     main {
