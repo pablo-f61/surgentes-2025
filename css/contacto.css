@@ -26,14 +26,15 @@ p {
   margin-bottom: 24px;
 }
 
-.links {
+
+.contacto {
   margin-top: 40px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.links a {
+.contacto a {
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-size: 20px;
@@ -41,10 +42,24 @@ p {
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.links a:hover {
+.contacto a:hover {
   opacity: 1;
   transform: translateX(2px);
 }
+
+.contactos {
+  display: block;        /* o ni lo pongas */
+}
+
+.fila-contacto {
+  display: grid;
+  grid-template-columns: 40px auto;
+  align-items: center;
+  gap: 290px;
+  margin-bottom: 10px;
+}
+ 
+
 
 .apoyo {
   margin: 40px 0;
