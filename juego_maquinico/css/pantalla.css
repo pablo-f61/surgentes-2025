@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: "Special Elite", monospace;
+  background-color: #f2f2f2;
+  color: rgb(20,20,20);
+}
+
+.pantalla {
+  min-height: 100vh;
+  padding: 80px 60px;
+  box-sizing: border-box;
+}
+
+.bloque {
+  max-width: 900px;
+}
+
+h1 {
+  font-size: 48px;
+  letter-spacing: 0.08em;
+  margin-bottom: 40px;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.log {
+  font-family: monospace;
+  font-size: 14px;
+  background: rgba(0,0,0,0.05);
+  padding: 16px 20px;
+  margin: 40px 0;
+  white-space: pre-wrap;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 768px) {
+
+  .pantalla {
+    padding: 40px 20px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .log {
+    font-size: 12px;
+  }
+}
+
+.log {
+  font-family: monospace;
+  background: rgba(0,0,0,0.05);
+  padding: 20px;
+  overflow: hidden;
+}
+
+.log img {
+  max-width: 100%;
+  opacity: 0.85;
+  filter: contrast(1.1) blur(0.3px);
+}
+
+.log img {
+  animation: jitter 6s infinite alternate;
+}
+
+@keyframes jitter {
+  0% { transform: translate(0,0); }
+  50% { transform: translate(2px,-2px); }
+  100% { transform: translate(-2px,2px); }
+}
+
+.movimiento a a:hover {
+  background-color: #214f90; /* Fondo suave al pasar el ratón */
+   transition: transform 0.3s;
+}
+
