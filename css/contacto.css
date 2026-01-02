@@ -31,7 +31,7 @@ p {
   margin-top: 40px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 6px;
 }
 
 .contacto a {
@@ -55,7 +55,7 @@ p {
   display: grid;
   grid-template-columns: 40px auto;
   align-items: center;
-  gap: 290px;
+  gap: 90px;
   margin-bottom: 10px;
 }
  
