@@ -2,7 +2,7 @@
 
 
 const tituloTexto = "SURGENTES";
-const textoTexto = " Colectivo artístico que trabaja en el cruce entre territorio, procesos materiales y tecnologías inestables. Su práctica se centra en la experimentación, la falla y el error como formas de conocimiento, abordando lo visible y lo oculto en los sistemas naturales, sociales y técnicos. El trabajo del colectivo se desarrolla a través de instalaciones, esculturas sonoras,  dispositivos experimentales y registros audiovisuales, poniendo en tensión las ideas de control,  eficiencia y progreso.";
+const textoTexto = "Colectivo artístico que trabaja en el cruce entre territorio, procesos materiales y tecnologías inestables. Su práctica se centra en la experimentación, la falla y el error como formas de conocimiento, abordando lo visible y lo oculto en los sistemas naturales, sociales y técnicos. El trabajo del colectivo se despliega mediante instalaciones, esculturas sonoras, dispositivos experimentales y acciones performáticas registradas, donde el cuerpo interviene como herramienta y como superficie, produciendo imágenes que no representan sino que perforan, tensando las ideas de control, eficiencia y progreso.";
      
      
 
@@ -41,12 +41,12 @@ let activado = false;
 
 setTimeout(() => {
   document.querySelector(".menu").style.opacity = 1;
-}, 26000);
+}, 35000);
 
 setTimeout(() => {
   audio.pause();
   audio.currentTime = 0;
-}, 26000);
+}, 35000);
 
 });
 
