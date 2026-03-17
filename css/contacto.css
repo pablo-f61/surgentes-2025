@@ -47,19 +47,33 @@ p {
   transform: translateX(2px);
 }
 
-.contactos {
-  display: block;        /* o ni lo pongas */
-}
-
 .fila-contacto {
   display: grid;
   grid-template-columns: 40px auto;
   align-items: center;
-  gap: 70px;
+  gap: 7px;
   margin-bottom: 10px;
 }
  
+.fila-contacto a {
+  font-family: monospace;
+}
 
+.mail {
+  cursor: pointer;
+  font-family: monospace; /* o la que elegiste */
+}
+
+.copiado {
+  margin-left: 10px;
+  opacity: 0;
+  font-size: 0.9em;
+  transition: opacity 0.3s ease;
+}
+
+.copiado.visible {
+  opacity: 1;
+}
 
 .apoyo {
   margin: 40px 0;
