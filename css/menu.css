@@ -75,22 +75,17 @@ h1 {
   opacity: 1;
 }
 
-
 @media (max-width: 768px) {
 
-    main {
+  main {
     padding: 20px;
-  }
-
-    .video-wrapper {
-    margin: 30px auto;
   }
 
   h1 {
     font-size: 36px;
   }
 
-    h2 {
+  h2 {
     font-size: 22px;
     letter-spacing: 0.02em;
   }
@@ -99,13 +94,24 @@ h1 {
     font-size: 18px;
   }
 
-    .video-wrapper {
+  .video-wrapper {
     margin: 30px auto;
   }
 
-    .menu {
+  /* 🔥 MENÚ EN MOBILE (clave) */
+
+  .menu {
+    position: static;
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
   }
+
+  .menu a {
+    position: static; /* desactiva el absoluto */
+    font-size: 18px;
+    padding: 8px 12px;
+  }
+
 }
