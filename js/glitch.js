@@ -3,7 +3,7 @@ const audioNormal = document.getElementById('audio-normal');
 const audioGlitch = document.getElementById('audio-glitch');
 
 // Intenta reproducir el audio normal al primer clic
-document.addEventListener('click', () => {
+document.addEventListener('click touchstart', () => {
   audioNormal.play();
 }, { once: true });
 
