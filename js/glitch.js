@@ -24,4 +24,4 @@ function glitch() {
 
 setInterval(() => {
   if (Math.random() > 0.6) glitch();
-}, 2000);
+}, 900);
