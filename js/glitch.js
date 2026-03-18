@@ -1,4 +1,11 @@
 const rio = document.querySelector('.rio');
+const audioNormal = document.getElementById('audio-normal');
+const audioGlitch = document.getElementById('audio-glitch');
+
+// Intenta reproducir el audio normal al primer clic
+document.addEventListener('click', () => {
+  audioNormal.play();
+}, { once: true });
 
 function glitch() {
   const colores = [
@@ -11,6 +18,11 @@ function glitch() {
 
   const duraciones = [80, 120, 60, 150, 200];
 
+  // Activa audio glitch
+  audioNormal.pause();
+  audioGlitch.currentTime = 0;
+  audioGlitch.play();
+
   let i = 0;
   const intervalo = setInterval(() => {
     rio.style.filter = colores[Math.floor(Math.random() * colores.length)];
@@ -18,6 +30,9 @@ function glitch() {
     if (i > 6) {
       clearInterval(intervalo);
       rio.style.filter = 'none';
+      // Vuelve al audio normal
+      audioGlitch.pause();
+      audioNormal.play();
     }
   }, duraciones[Math.floor(Math.random() * duraciones.length)]);
 }
