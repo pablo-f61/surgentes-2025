@@ -8,15 +8,6 @@ body {
   background-repeat: no-repeat;
 }
 
-h1 {
-  color:black;
-  text-align: center;
-  margin-top: 40px;
-}
-
-
-
-
 .menu a:hover {
   opacity: 0.6;
 }
@@ -40,12 +31,12 @@ h1 {
 /* posiciones */
 
 .videos {
-  top: 40%;
-  left: 25%;
+  top: 30%;
+  left: 60%;
 }
 
 .mapobra {
-  top: 40%;
+  top: 10%;
   left: 70%;
 }
 
@@ -55,13 +46,13 @@ h1 {
 }
 
 .integrantes {
-  top: 60%;
-  left: 40%;
+  top: 50%;
+  left: 30%;
 }
 
 .quees {
-  top: 10%;
-  left: 10%;
+  top: 80%;
+  left: 20%;
   font-size: 14px;
   opacity: 0.6;
 }
