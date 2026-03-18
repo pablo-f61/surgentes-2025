@@ -84,42 +84,29 @@ body {
 }
 
 @media (max-width: 768px) {
-
-  main {
-    padding: 20px;
-  }
-
-  h1 {
-    font-size: 36px;
-  }
-
-  h2 {
-    font-size: 22px;
-    letter-spacing: 0.02em;
-  }
-
-  p {
-    font-size: 18px;
-  }
-
-  .video-wrapper {
-    margin: 30px auto;
-  }
-
-  /* 🔥 MENÚ EN MOBILE (clave) */
-
-  .menu {
-    position: static;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-  }
-
   .menu a {
-    position: static; /* desactiva el absoluto */
-    font-size: 18px;
-    padding: 8px 12px;
+    font-size: 28px;
+    opacity: 0.85;
   }
-
+  .videos {
+    top: 25%;
+    left: 50%;
+  }
+  .mapobra {
+    top: 8%;
+    left: 55%;
+  }
+  .contacto {
+    top: 75%;
+    left: 40%;
+  }
+  .integrantes {
+    top: 48%;
+    left: 15%;
+  }
+  .quees {
+    top: 75%;
+    left: 10%;
+    font-size: 20px;
+  }
 }
