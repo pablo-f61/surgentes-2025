@@ -1,13 +1,30 @@
+
 body {
   margin: 0;
   font-family: 'Special Elite', monospace;
+}
 
+.mapa {
+  position: relative;
+  width: 100%;
+  height: 100vh;
   background-image: url("../img/fondo.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
+.rio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
 .menu a:hover {
   opacity: 0.6;
 }
