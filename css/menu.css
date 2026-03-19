@@ -108,6 +108,13 @@ border-radius: 10%;
     font-size: 28px;
     opacity: 0.85;
   }
+
+  .menu a:active {
+  opacity: 1;
+  background-color: rgb(245, 163, 56);
+  border-radius: 10%;
+}
+
   .videos {
     top: 25%;
     left: 50%;
@@ -136,7 +143,7 @@ border-radius: 10%;
     height: 5%;
   }
 
-.parlante:hover {
+.parlante:active {
   opacity: 0.3;
   transform: translateX(1px);
   border-radius: 10%;
