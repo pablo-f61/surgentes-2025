@@ -135,4 +135,12 @@ border-radius: 10%;
     width: 5%;
     height: 5%;
   }
+
+.parlante:hover {
+  opacity: 0.3;
+  transform: translateX(1px);
+  border-radius: 10%;
+  background-color: rgb(245, 163, 56);
+  }
+
 }
