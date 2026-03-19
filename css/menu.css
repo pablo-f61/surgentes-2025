@@ -25,7 +25,10 @@ body {
 }
 
 .parlante:hover {
-  opacity: 0.6;
+  opacity: 0.3;
+  transform: translateX(1px);
+  border-radius: 10%;
+  background-color: rgb(245, 163, 56);
 }
 
 .rio {
@@ -40,7 +43,10 @@ body {
   mix-blend-mode: multiply;
 }
 .menu a:hover {
-  opacity: 0.6;
+opacity: 0.6;
+transform: translateX(1px);
+background-color: rgb(245, 163, 56);
+border-radius: 10%;
 }
 
 .menu {
