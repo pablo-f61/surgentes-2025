@@ -24,6 +24,10 @@ body {
   background-color: rgb(209, 193, 169);
 }
 
+.parlante:hover {
+  opacity: 0.6;
+}
+
 .rio {
   position: absolute;
   top: 0;
