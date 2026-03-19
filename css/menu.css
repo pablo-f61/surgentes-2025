@@ -119,4 +119,10 @@ body {
     left: 10%;
     font-size: 28px;
   }
+  .parlante{
+    top: 5%;
+    left: 3%;
+    width: 5%;
+    height: 5%;
+  }
 }
