@@ -21,7 +21,7 @@ body {
   width: 5%;
   height: 10%;
   background-image: url("../img/parlante.png");
-  background-color: rgb(209, 193, 169);
+  
 }
 
 .parlante:hover {
@@ -148,7 +148,7 @@ border-radius: 10%;
   opacity: 0.3; 
   transform: translateX(1px);
   border-radius: 10%;
-  background-color: rgb(245, 163, 56);
+  
   }
 
 }
