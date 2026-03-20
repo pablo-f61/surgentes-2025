@@ -70,3 +70,16 @@ function glitch() {
     }
   }, duraciones[Math.floor(Math.random() * duraciones.length)]);
 }
+
+// Fadeout al hacer clic en los links
+document.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault(); // frena la navegación
+    const destino = link.href; // guarda a dónde va
+    document.body.style.transition = 'opacity 0.8s ease';
+    document.body.style.opacity = '0'; // desvanece
+    setTimeout(() => {
+      window.location.href = destino; // navega después del fadeout
+    }, 800); // espera 0.8s que es lo mismo que la transición
+  });
+});

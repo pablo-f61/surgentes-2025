@@ -115,6 +115,15 @@ border-radius: 10%;
   border-radius: 10%;
 }
 
+body {
+  animation: fadein 0.8s ease;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
   .videos {
     top: 25%;
     left: 50%;
