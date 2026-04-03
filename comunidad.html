@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comunidad | Surgentes</title>
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/comunidad.css">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+</head>
+<body>
+
+  <div class="mapa">
+    <img class="rio" src="img/Rio.png" alt="rio">
+
+    <!-- NAVEGACIÓN -->
+    <main>
+      <nav class="menu">
+        <a class="videos"      href="videos.html"      data-img="img/Videos.jpg">Videos</a>
+        <a class="mapobra"     href="mapobra.html"     data-img="img/mapobra.jpg">Proyecto</a>
+        <a class="contacto"    href="contacto.html"    data-img="img/contacto.jpg">Contacto</a>
+        <a class="integrantes" href="integrantes.html" data-img="img/integrantes.jpg">Integrantes</a>
+        <a class="quees"       href="quees.html"       data-img="img/Origen.jpg">Origen</a>
+        <a class="comunidad"   href="comunidad.html"   data-img="img/comunidad.jpg">Comunidad</a>
+      </nav>
+    </main>
+
+    <!-- CONTENIDO -->
+    <div class="comunidad-wrapper">
+
+      <h1 class="page-title">Comunidad</h1>
+      <p class="page-subtitle">Fotografías del territorio — antiguas y recientes</p>
+
+      <!-- FORMULARIO -->
+      <div class="upload-form">
+        <p class="form-title">Subir una fotografía</p>
+
+        <div class="form-group">
+          <label for="input-desc">Descripción breve</label>
+          <textarea id="input-desc" placeholder="Contá algo sobre la imagen, la fecha aproximada, el lugar..." maxlength="300"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Fotografía</label>
+          <div class="foto-drop" id="foto-drop">
+            <input type="file" id="input-foto" accept="image/*">
+            <p class="foto-drop-text">Hacé clic o arrastrá una imagen aquí</p>
+            <img id="foto-preview" class="foto-preview" alt="Vista previa">
+          </div>
+        </div>
+
+        <button class="btn-enviar" id="btn-enviar">Enviar</button>
+        <p class="filtro-aviso">El contenido es moderado automáticamente antes de publicarse.</p>
+        <p class="status-msg" id="status-msg"></p>
+      </div>
+
+      <!-- GALERÍA -->
+      <p class="galeria-title">Fotografías de la comunidad</p>
+      <div class="galeria-grid" id="galeria-grid">
+        <p class="galeria-empty" id="galeria-empty">Cargando fotografías...</p>
+      </div>
+
+    </div>
+
+    <div id="preview"></div>
+  </div>
+
+  <audio id="audio-normal" src="audio/normal.mp3" loop></audio>
+  <audio id="audio-glitch" src="audio/glitch.mp3"></audio>
+
+  <script src="js/glitch.js"></script>
+  <script src="js/preview.js"></script>
+  <script type="module" src="js/comunidad.js"></script>
+
+</body>
+</html>
