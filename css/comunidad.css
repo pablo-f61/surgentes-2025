@@ -43,7 +43,7 @@ body {
 
 .menu a:hover {
   opacity: 1;
-  background-color: rgb(245, 163, 56);
+  background-color: rgba(180, 150, 100, 0.6);
   border-radius: 10%;
   transform: translateX(1px);
   color: black;
