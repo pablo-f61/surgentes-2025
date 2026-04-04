@@ -314,3 +314,81 @@ body {
   from { opacity: 0; transform: translateY(10px); }
   to   { opacity: 1; transform: translateY(0); }
 }
+
+
+/* ── LIGHTBOX (solo escritorio) ── */
+ 
+@media (min-width: 768px) {
+ 
+  .galeria-item img {
+    cursor: zoom-in;
+    height: 220px;
+  }
+ 
+  .galeria-item-desc {
+    font-size: 0.95rem;
+  }
+ 
+  /* Fondo oscuro del lightbox */
+  .lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.92);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    cursor: zoom-out;
+    animation: fadeIn 0.25s ease;
+  }
+ 
+  .lightbox.activo {
+    display: flex;
+  }
+ 
+  /* Imagen grande */
+  .lightbox-img {
+    max-width: 85vw;
+    max-height: 75vh;
+    object-fit: contain;
+    border: 1px solid rgba(180, 150, 100, 0.25);
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
+  }
+ 
+  /* Descripción debajo */
+  .lightbox-desc {
+    font-family: 'Special Elite', cursive;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    color: #c8b89a;
+    text-align: center;
+    margin-top: 1.2rem;
+    max-width: 600px;
+    line-height: 1.6;
+  }
+ 
+  /* Botón cerrar */
+  .lightbox-cerrar {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.5rem;
+    font-family: 'Special Elite', cursive;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #7a6a55;
+    background: transparent;
+    border: 1px solid rgba(180, 150, 100, 0.3);
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    transition: color 0.3s, border-color 0.3s;
+  }
+ 
+  .lightbox-cerrar:hover {
+    color: #f0e6d0;
+    border-color: rgb(245, 163, 56);
+  }
+ 
+}
