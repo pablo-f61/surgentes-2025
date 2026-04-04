@@ -82,7 +82,12 @@ border-radius: 10%;
 
 .videos {
   top: 30%;
-  left: 60%;
+  left: 40%;
+}
+
+.comunidad{
+  top: 30%;
+  left: 65%;
 }
 
 .mapobra {
